@@ -1,0 +1,8 @@
+i
+__pycache__/
+*.py[cod]
+.venv/
+build/
+*.log
+.idea/
+
