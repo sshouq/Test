@@ -10,5 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Say Hello from Demo 2
-        run: echo "🎉 This is Demo 2 from Shoug's test repo!"
+    - name: Say Hello from Demo 2
+      run: echo "🎉 This is Demo 2 from Shouq’s test repo!"
+
+    - name: Print Secret from Demo 3
+      env:
+        API_KEY: ${{ secrets.API_KEY }}
+      run: |
+        echo "The API key is: $API_KEY"
+
