@@ -1,0 +1,14 @@
+name: Hello Demo Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello from Demo 2
+        run: echo "🎉 This is Demo 2 from Shouq's test repo!"
